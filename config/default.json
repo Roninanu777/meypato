@@ -1,0 +1,12 @@
+{
+	"app": {
+		"dev": {
+			"endpoint": "mongodb://localhost:27017/meypato",
+			"app_port": 3100,
+			"tkn_secret_key": "abcdefghijklmnopqrstuvwxyz1234567890",
+			"sms_region": "ap-south-1",
+			"sms_access_key": "AKIASRH6CKXRAYWVWAS7",
+			"sms_secret_key": "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"
+		}
+	}
+}
