@@ -1,7 +1,7 @@
 import { Schema, model } from "mongoose";
 import jwt from "jsonwebtoken";
 
-const usrSch = Schema(
+const UserSchema = Schema(
 	{
 		number: {
 			type: String,
@@ -11,7 +11,7 @@ const usrSch = Schema(
 	{ timestamps: true }
 );
 
-usrSch.methods.generateTkn = function () {
+UserSchema.methods.generateTkn = function () {
 	return jwt.sign(
 		{
 			_id: this._id,
@@ -23,4 +23,4 @@ usrSch.methods.generateTkn = function () {
 	);
 };
 
-export const User = model("User", usrSch);
+export const User = model("User", UserSchema);
